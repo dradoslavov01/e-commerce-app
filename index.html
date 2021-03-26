@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerce-app</title>
+    <title>Online Shop</title>
     <link rel="stylesheet" href="/static/style.css">
-    <script type="module" src="./src/app.js"></script>
+    <script type="module" src="/src/app.js"></script>
 </head>
 <body>
-    
     <main class="container">
-        <ul class="topnav">
-            <li><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a href="/category" class="dropbtn">Category</a>
-                <div class="dropdown-content">
-                    <a href="#">Men</a>
-                    <a href="#">Women</a>
-                    <a href="#">Jewelery 2</a>
-                    <a href="#">Electonic</a>
-
-                </div>
-            </li>
-            <li class="right"><a href="/register">Register</a></li>
-            <li class="right"><a href="/login">Login</a></li>
-          </ul>
+        <nav>
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li class="dropBtn left">
+                    <a href="#">Category</a>
+                    <div class="dropdown">
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Electonic</a>
+                        <a href="#">Jewelery</a>
+                    </div>
+                </li>
+                <li class="right"><a href="#">Register</a></li>
+                <li class="right"><a href="#">Login</a></li>
+            </ul>
+        </nav>
     </main>
-
 </body>
 </html>
