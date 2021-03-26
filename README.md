@@ -1,2 +1,2 @@
 # e-commerce-app
-Create simple e-commerce-app using javascript, html and css
+Create simple online shop SPA using javascript, html and css
