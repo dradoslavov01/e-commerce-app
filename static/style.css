@@ -1,3 +1,49 @@
 @import 'nav.css';
 @import 'login.css';
 @import 'register.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.movies-sections {
+    width: 370px;
+    margin-top: 50px;
+    margin-right: 40px;
+    background-color: rgb(19, 23, 23);
+    
+    border-bottom: solid 3px #f8002f;
+    height: 100%;
+    align-items: center;
+}
+.container h1{
+    text-align: center;
+    position: absolute;
+}
+
+
+.movies-sections p{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.movies-sections img{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 250px;
+}

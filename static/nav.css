@@ -1,21 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
+
   ul{
     list-style-type: none;
-    background-color: rgb(107, 169, 206);
+    background-color: rgb(34, 36, 37);
     overflow: hidden;
-    width: 98%;
-    margin-left:1%;
-    margin-top: 5px;
-    height: 58px;
+    margin: 5px 7px;
+    height: 100px;
+   
   }
   
   nav li{
     float: left;
-    padding: 15px 17px;
+    padding: 20px 17px;
   }
   
   nav li.right {
@@ -25,15 +20,16 @@
   nav li a {
     text-decoration: none;
     font-size: 25px;
-    color: #333;
+    color: #fff;
 
   }
 
-  nav li a:hover {
-    font-size: 27px;
-    transition: 0.4s;
-    color: #f9f9f9;
+  #movies-link {
+    color:#f8002f;
+    font-size: 30px;
+    font-weight: bolder;
   }
+
   
   .dropdown {
     display: none;
@@ -53,11 +49,18 @@
   }
 
   .dropdown a:hover{
-    background-color: rgb(107, 169, 206);
+    background-color: rgb(34, 36, 37);
   }
   
   .dropBtn:hover .dropdown {
     display: block;
+  }
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {
+      float: none;
+      text-align: center;
+    }
   }
   
   
