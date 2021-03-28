@@ -3,64 +3,51 @@
     list-style-type: none;
     background-color: rgb(34, 36, 37);
     overflow: hidden;
-    margin: 5px 7px;
-    height: 100px;
+    margin-bottom: 70px;
    
   }
   
   nav li{
     float: left;
-    padding: 20px 17px;
+    padding: 15px 17px;
   }
   
   nav li.right {
     float: right;
+    padding: 18px 17px;
   }
   
   nav li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
 
   }
 
   #movies-link {
     color:#f8002f;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
   }
 
-  
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 6.8%;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  #search{
+    margin: 19px 17px;
+    font-size: 17px;
+    outline: none;
+    width: 150px;
+    height: 25px;
   }
-  .dropdown a{
-    color: black;
-    padding: 10px 14px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown a:hover{
-    background-color: rgb(34, 36, 37);
+  #search:focus{
+    width: 200px;
   }
   
-  .dropBtn:hover .dropdown {
-    display: block;
-  }
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {
       float: none;
       text-align: center;
     }
+  
   }
   
   

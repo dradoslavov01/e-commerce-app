@@ -4,6 +4,7 @@ export const settings = {
 
 
 async function request(url, options) {
+    console.log(url);
     try {
         const response = await fetch(url, options);
         
@@ -13,7 +14,7 @@ async function request(url, options) {
         }
         try {
             const data = await response.json();
-            return data;
+            return data.d;
         } catch (err) {
             return response;
         }
@@ -24,27 +25,27 @@ async function request(url, options) {
 }
 
 
-function getOptions(method = 'get', body) {
-    const options = {
-        method,
-        headers: {}
-    };
-    const token = sessionStorage.getItem('authToken');
-    if(token != null) {
-        options.headers['X-Authorization'] = token;
-    }
+// function getOptions(method = 'get', body) {
+//     const options = {
+//         method,
+//         headers: {}
+//     };
+//     const token = sessionStorage.getItem('authToken');
+//     if(token != null) {
+//         options.headers['X-Authorization'] = token;
+//     }
 
-    if(body) {
-        options.headers['Content-Type'] = 'application/json';
-        options.body = JSON.stringify(body);
-    }
+//     if(body) {
+//         options.headers['Content-Type'] = 'application/json';
+//         options.body = JSON.stringify(body);
+//     }
 
-    return options;
-}
+//     return options;
+// }
 
 
-export async function get(url) {
-    return await request(url, getOptions());
+export async function get(url, options) {
+    return await request(url, options);
 }
 
 export async function post(url, data) {
