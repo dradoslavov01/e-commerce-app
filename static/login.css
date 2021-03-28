@@ -1,18 +1,13 @@
 .container-login{
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
     width: 400px;
     height: 600px;
+    margin: 10px 10px;
     border:2px solid black;
     font-family: sans-serif;
     text-align: center;
 
 }
-.container-login h1{
+.container h1{
     text-transform: uppercase;
     margin-top:70px;
 
@@ -59,9 +54,6 @@
 }
 .container-login i.asd{
     font-size: 100px;
-
-    
-   
 
 }
 .container-login i.a{

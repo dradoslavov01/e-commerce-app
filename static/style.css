@@ -9,9 +9,6 @@
     
   }
 
-  
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -20,7 +17,6 @@
 .movies-sections {
     background-color: rgb(19, 23, 23);
     width: 330px;
-
     margin-right: 6px;
     margin-left: 10px;
     margin-bottom: 50px;
